@@ -45,10 +45,9 @@ builder.add_edge(REFLECT, GENERATE)
 
 graph = builder.compile()
 print(graph.get_graph().draw_mermaid())
-# graph.get_graph().print_ascii()
+graph.get_graph().print_ascii()
 
 if __name__ == "__main__":
-    print("Hello LangGraph")
     inputs = {
         "messages": [
             HumanMessage(
